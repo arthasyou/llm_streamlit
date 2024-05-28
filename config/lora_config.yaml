@@ -16,7 +16,7 @@ lora_layers: 16
 batch_size: 4
 
 # Iterations to train for.
-iters: 1000
+iters: 100
 
 # Number of validation batches, -1 uses the entire validation set.
 val_batches: 25
