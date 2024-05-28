@@ -1,9 +1,11 @@
 #!/bin/zsh
 
+current_path=$(pwd)
+
 cd /Users/you/src/mlx-examples
 
 echo "Fine tuning..."
-python -m mlx_lm.lora --config ../config/lora_config.yaml
+python -m mlx_lm.lora --config "$current_path/config/lora_config.yaml"
 
 echo "Merging ..."
 python -m mlx_lm.fuse \
