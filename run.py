@@ -17,7 +17,7 @@ st.title("LLM Fine-Tuning and Model Mergin")
 uploaded_file = st.file_uploader("Choose a file")
 
 # Text input for specifying save path
-save_path = "/Users/yousx/data/zy/train.jsonl"
+save_path = "/Users/you/data/zy/train.jsonl"
 
 # Button to save the file
 if st.button("Save File"):
@@ -36,7 +36,7 @@ def run_shell_command(command):
 st.title("Run Shell Command from Streamlit")
 
 # Text input for shell command
-command = st.text_input("Enter the shell command to run:")
+command = "./run.sh"
 
 # Button to run the command
 if st.button("Fine tuning and merging"):
